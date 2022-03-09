@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* COMMON */
+html {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+/* NAVIGATION */
+.menu {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+}
+
+.menu-inline li {
+    display: inline-block;
+}
+
+.menu-inline li a {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, .4);
+}
+
+.menu-inline li a:hover,
+.menu-inline li a:active,
+.menu-inline li a:focus {
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, .8);
+}
+
+
+
+/* MAIN */
+.shoe {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.shoe-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.shoe-content h2 {
+    font-size: 3vw;
+    color: yellow;
+}
+
+.bg-yellow .shoe-content h2 {
+    color: green;
+}
